@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEFIT:GYM Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    
+
+</head>
+<body>
+    
+<!-- header section starts      -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <span>BE</span>FIT </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    
+
+</header>
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(images/home-bg-1.jpg) no-repeat;">
+                <div class="content">
+                    <div class="avtarimg1">
+                        <img src="images/avtar1.jpg" alt="">
+                        <a class="modal-trigger" href="#modal3">Admin-login</a>
+                    <hr>
+                   </div>
+                   <div class="avtarimg2">
+                    <img src="images/avtar1.jpg" alt="">
+                    <a class="modal-trigger" href="#modal1">User-SignUp</a>
+                    <hr>
+                  </div>
+                  <div class="avtarimg3">
+                    <img src="images/avtar1.jpg" alt="">
+                    <a class="modal-trigger" href="#modal2">User-login</a>
+                    <hr>
+                </div>
+                </div>
+                </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-bg-2.jpg) no-repeat;">
+                <div class="content">
+                    <div class="avtarimg1">
+                        <img src="images/avtar1.jpg" alt="">
+                        <a class="modal-trigger" href="#modal3">Admin-login</a>
+                    <hr>
+                   </div>
+                   <div class="avtarimg2">
+                    <img src="images/avtar1.jpg" alt="">
+                    <a class="modal-trigger" href="#modal1">User-SignUp</a>
+                    <hr>
+                  </div>
+                  <div class="avtarimg3">
+                    <img src="images/avtar1.jpg" alt="">
+                    <a class="modal-trigger" href="#modal2">User-login</a>
+                    <hr>
+                </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-bg-3.jpg) no-repeat;">
+                <div class="content">
+                    <div class="avtarimg1">
+                        <img src="images/avtar1.jpg" alt="">
+                        <a class="modal-trigger" href="#modal3">Admin-login</a>
+                    <hr>
+                   </div>
+                   <div class="avtarimg2">
+                    <img src="images/avtar1.jpg" alt="">
+                    <a class="modal-trigger" href="#modal1">User-SignUp</a>
+                    <hr>
+                  </div>
+                  <div class="avtarimg3">
+                    <img src="images/avtar1.jpg" alt="">
+                    <a class="modal-trigger" href="#modal2">User-login</a>
+                    <hr>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+  <!-- user-signup -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>SignUp</h4>
+      <input type="text" id="username" placeholder="Full_Name"/>
+      <input  type="email"  id="semail" placeholder="Email" autocapitalize='none'  autocorrect={false}/>
+      <input type="password" id="spassword" placeholder="Password" />
+      <input type="datetime-local" id="date"/>
+     
+      <div class="plan basic">
+        <h3>basic plan</h3>
+        <div class="price"><span>$</span>30<span>/mo</span></div>
+       
+       
+      
+    </div>
+
+    <div class="plan">
+        <h3>premium plan</h3>
+        <div class="price"><span>$</span>90<span>/mo</span></div>
+        
+       
+       
+       <input type="text" id="payment" placeholder="Pay-For-Plan">
+      <!-- <button  class="btn">Buy-Now</button>-->
+       <button type="button" id="signup" class="btn">Submit</button>
+    </div>
+
+
+
+
+      
+    </div>
+    
+  </div>
+
+<!--user-login-->
+  
+
+ <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4>
+       
+      <input type="email"  id="email" placeholder="Email" autocapitalize='none' autocorrect={false}/>
+      <input type="password" id="password" placeholder="Password" />
+      
+       
+       <button type="button" id="login"  class="btn">Login  </button><br>
+      <button type="button" id="logout" class="btn">logout</button><br><br><hr>
+     
+     <a class="modal-trigger" href="#modal11" class="ctn" >Update-Plan</a>
+      
+          
+      
+    </div>
+    
+  </div>
+
+ <!--update-->
+  <div id="modal11" class="modal">
+    <div class="modal-content">
+      <h4>Update Your Plan</h4>
+       
+      <input type="text" id="uusername" placeholder="Full_Name"/>
+      <input  type="email"  id="uemail" placeholder="Email" autocapitalize='none'  autocorrect={false}/>
+      <input  type="text"  id="uiid" placeholder="Your-uid" />
+      
+      <input type="datetime-local" id="udate"/>
+     
+      <div class="plan basic">
+        <h3>basic plan</h3>
+        <div class="price"><span>$</span>30<span>/mo</span></div>
+       
+       
+      
+    </div>
+
+    <div class="plan">
+        <h3>premium plan</h3>
+        <div class="price"><span>$</span>90<span>/mo</span></div>
+       
+       <input type="text" id="upayment" placeholder="Pay-For-Plan">
+     
+      <button type="button" id="updated" class="btn">Update</button>
+     
+    
+      
+          
+      
+    </div>
+    
+  </div>
+ 
+</div>>
+<!--admin-login-->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Admin-login</h4>
+      
+      <input type="text" id="aemail" placeholder="Email" />
+      <input type="password" id="apassword" placeholder="Password" />
+      
+       
+       <button   id="admin" class="btn">Login  </button>
+    <!--  <button type="button" id="adminlogout" class="btn">logout</button>-->
+
+  
+
+      
+    </div>
+    
+  </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                               
+
+
+  <!-- footer section starts  -->
+  <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="links" href="index.html#home">home</a>
+            <a class="links" href="index.html#about">about</a>
+            <a class="links" href="index.html#features">features</a>
+            <a class="links" href="index.html#pricing">pricing</a>
+            <a class="links" href="index.html#trainers">trainers</a>
+            <a class="links" href="index.html#blogs">blogs</a>
+            
+        </div>
+
+        <div class="box">
+            <h3>opening hours</h3>
+            <p> monday : <i> 7:00am - 10:30pm </i> </p>
+            <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
+            <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
+            <p> friday : <i> 7:00am - 10:30pm </i> </p>
+            <p> saturday : <i> 7:00am - 10:30pm </i> </p>
+            <p> sunday : <i> closed </i> </p>
+        </div>
+
+        <div class="box">
+            <h3>opening hours</h3>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+            <p> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </p>
+            <p> <i class="fas fa-map"></i> mumbai, india - 400104 </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        </div>
+
+       
+
+    </div>
+
+</section>
+
+
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+
+<!--<script src="js/index.js"></script>-->
+<script src="js/script.js"></script>
+
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+</script>
+            
+  
+
+</body>
+
+
+
+  
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
+  import { getDatabase, set, ref, update, child, get, onValue  } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged,signOut } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDAX5no7WEoZrETmdfJ-Rmm0QBSq7adFss",
+    authDomain: "project-data-trainer.firebaseapp.com",
+    projectId: "project-data-trainer",
+    storageBucket: "project-data-trainer.appspot.com",
+    messagingSenderId: "561888057410",
+    appId: "1:561888057410:web:dea3a0b5ce8dc333a8b5db"
+  };
+
+
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  const auth = getAuth(app);
+
+
+//------------------------------------------------------------------------------------------//
+
+var uid=document.getElementById('uiid').value;
+
+ 
+
+
+
+admin.addEventListener('click',(e)=>{
+  
+    var email=document.getElementById('aemail').value;
+    var password=document.getElementById('apassword').value;
+
+  if(email=="radhe@gmail.com" && password=="961707"){
+    
+    alert("Admin loged in....");
+     if(window.confirm("click for redirect")){
+       window.open("new.html");
+
+  }
+ }else{
+  alert("Incorrect credentials");
+ }
+});
+
+//---------------------------------------------------------------------------------------------------//
+
+
+updated.addEventListener('click',(e)=>{
+ 
+  var username = document.getElementById('uusername').value;
+   var email = document.getElementById('uemail').value;
+   //var password = document.getElementById('spassword').value;
+   var payment = document.getElementById('upayment').value;
+   var date = document.getElementById('udate').value;
+
+  update(ref(database, "users/" + uiid.value),{
+    username:uusername.value,
+      
+      email:uemail.value,
+      payment:upayment.value,
+      date:udate.value
+     })
+     .then(()=>{
+         alert(" updated successfully!!");
+     })
+     .catch((error)=>{
+        alert("error"+error);
+     });
+
+})
+ 
+//------------------------------------------------------------------------------------------------------//
+
+
+  signup.addEventListener('click',(e)=>{
+  
+    var username = document.getElementById('username').value;
+   var email = document.getElementById('semail').value;
+   var password = document.getElementById('spassword').value;
+   var payment = document.getElementById('payment').value;
+   var date = document.getElementById('date').value;
+  
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+   
+    //const dte=new Date();
+    set(ref(database,'users/'+ user.uid),{
+      username:username,
+      uid:user.uid,
+      email:email,
+      payment:payment,
+      date:date
+
+    })
+    alert('user signUp successfully');
+  })
+    
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    alert(errorMessage);
+    // ..
+    });
+  });
+
+ //----------------------------------------------------------------------------------------------------------// 
+
+login.addEventListener('click',(e)=>{
+
+     var email = document.getElementById('email').value;
+     var password = document.getElementById('password').value;
+ signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    const uid=user.uid;
+    
+
+    const dt=new Date();
+    update(ref(database,'users/'+ user.uid),{
+       last_login:dt, 
+     }) 
+       alert( "  user loged in....")
+       
+      
+      
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    alert(errorMessage);
+     });
+     
+ });
+
+ //--------------------------------------------------------------------------------------------------------------//
+
+ onAuthStateChanged(auth,(user)=>{
+  if(user){
+    const uid=user.uid;
+    
+
+    const starCountRef = ref(database, 'users/' +uid );
+      onValue(starCountRef,(snapshot)=>{
+       const data = snapshot.val();
+      // document.getElementById('para').value=data.username;
+      alert("UID :: "+uid+"\n"+"Username :: "+data.username+" \n"+"E-mail :: "+data.email+" \n"+"Fee For Plan :: "+data.payment+"\n "+"Date Of Payment :: "+data.date);
+      });
+      
+ 
+  }
+ });
+ //---------------------------------------------------------------------------------------------------------------------------------------------------------//
+ logout.addEventListener('click',(e)=>{
+ signOut(auth).then(()=>{
+  alert('user signout succesfully!!');
+}).catch((error)=>{
+  alert("error not signout");
+})
+ });
+//----------------------------------------------------------------------------------------------------------------------------//
+
+
+ 
+</script>
+
+</html>
